@@ -27,6 +27,22 @@
       "port": 9201,
       "webRoot": "${workspaceFolder}",
       "url": "http://127.0.0.1:58602/p/TEXAS-NODEJS/onchange.html?_cmAuth\u003djgupqtziwm"
+    },
+    {
+      "name": "Launch Chrome 127.0.0.1 (3)",
+      "type": "chrome",
+      "request": "launch",
+      "port": 9286,
+      "webRoot": "${workspaceFolder}",
+      "url": "http://127.0.0.1:58602/p/TEXAS-NODEJS/gender-checker.html?_cmAuth\u003djgupqtziwm"
+    },
+    {
+      "name": "Launch Chrome 127.0.0.1 (4)",
+      "type": "chrome",
+      "request": "launch",
+      "port": 9256,
+      "webRoot": "${workspaceFolder}",
+      "url": "http://127.0.0.1:58602/p/TEXAS-NODEJS/switch.html?_cmAuth\u003djgupqtziwm"
     }
   ]
 }

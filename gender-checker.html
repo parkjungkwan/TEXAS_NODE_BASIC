@@ -15,8 +15,10 @@
 	<h3>결혼은 하셨나요?</h3>
 	<input type="radio" name="married" value="Y" checked> 기혼 |
 	<input type="radio" name="married" value="N" > 미혼
+	<br>
 	<input type="button" id="btn" value="확인">
 </div>
+
 
 <script>
 window.onload = () =>{
@@ -24,6 +26,7 @@ window.onload = () =>{
 	const marrieds = document.getElementsByName('married')
 	const btn = document.getElementById('btn')
 	const box = document.getElementById('box')
+	//const result = document.getElementById('result')
 	let memo = ''
 	btn.onclick = function(){
 		if(memo === ''){
@@ -31,8 +34,16 @@ window.onload = () =>{
 			str = (genders[0].checked == true) 
 					? (marrieds[0].checked == true) 
 						? '<h1>기혼남성</h1>': '<h1>미혼남성</h1>' 
-					: (marrieds[1].checked == true) 
+					: (marrieds[0].checked == true) 
 						? '<h1>기혼여성</h1>': '<h1>미혼여성</h1>' 
+			box.removeChild(this)
+			memo = box.innerHTML
+			box.innerHTML = str
+			box.appendChild(this)
+		}else{
+			box.innerHTML = memo
+			box.appendChild(this)
+			memo = ''
 		}
 	}
 }	
@@ -43,7 +54,7 @@ window.onload = () =>{
 
 
 
-'<h1>기혼남성</h1>' :
+
 													
 
 
