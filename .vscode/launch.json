@@ -1,0 +1,32 @@
+// Use IntelliSense to learn about possible attributes.
+// Hover to view descriptions of existing attributes.
+// For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch Chrome 127.0.0.1",
+      "type": "chrome",
+      "request": "launch",
+      "port": 9276,
+      "webRoot": "${workspaceFolder}",
+      "url": "http://127.0.0.1:58602/p/TEXAS-NODEJS/index.html?_cmAuth\u003djgupqtziwm"
+    },
+    {
+      "name": "Launch Chrome 127.0.0.1 (1)",
+      "type": "chrome",
+      "request": "launch",
+      "port": 9228,
+      "webRoot": "${workspaceFolder}",
+      "url": "http://127.0.0.1:58602/p/TEXAS-NODEJS/counter.html?_cmAuth\u003djgupqtziwm"
+    },
+    {
+      "name": "Launch Chrome 127.0.0.1 (2)",
+      "type": "chrome",
+      "request": "launch",
+      "port": 9201,
+      "webRoot": "${workspaceFolder}",
+      "url": "http://127.0.0.1:58602/p/TEXAS-NODEJS/onchange.html?_cmAuth\u003djgupqtziwm"
+    }
+  ]
+}
