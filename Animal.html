@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<script src="Animal.js"></script>
+</head>
+<body>
+<script>
+
+window.onload = function(){
+	let main = new Main()
+	main.test()
+	let a = new Animal('고양이')
+	a.setName('고양이')
+	alert(`동물이름 : ${a.getName()}`) 
+	Human.prototype = new Animal()
+	Human.prototype.test = function(){
+		alert(`Human SetName ${this.name}`)
+	} 
+	let b = new Human('인간')
+	
+	SuperHero.prototype = new Human()
+	SuperHero.prototype.setName = function(){
+		alert(`SuperHero SetName ${this.name}`)
+	} 
+	let c = new SuperHero('슈퍼히어로')
+	
+	
+
+	
+}	
+</script>	
+</body>
+</html>
+
+
+
+
+
+
+
+
