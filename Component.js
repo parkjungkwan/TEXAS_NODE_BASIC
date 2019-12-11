@@ -1,14 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Document</title>
-</head>
-<body>
-
-<script>
 function InputText(){
 	this.make = function(){
 		const input = document.createElement('input')
@@ -33,23 +22,10 @@ function Br(){
 	}
 }		
 
-factory = function(type){
+function Factory(type){
 	switch(type){
 		case 'inputText' : return new InputText()
 		case 'inputButton' : return new InputButton()
 		case 'br' : return new Br()
 	}
 }
-window.onload = () =>{
-	const inputText = factory('inputText')
-	const inputButton = factory('inputButton')
-	const br = factory('br')
-	
-	document.body.appendChild(inputText.make())
-	document.body.appendChild(br.make())
-	document.body.appendChild(inputButton.make())
-
-}	
-</script>
-</body>
-</html>
