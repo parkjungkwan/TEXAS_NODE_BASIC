@@ -1,17 +1,27 @@
+function Div(){
+	this.make = function(id){
+		const div = document.createElement('div')
+		div.setAttribute('id',id)
+		div.setAttribute('style','border : 1px solid black')
+		//div.textContent = text
+		return div
+	}
+}
+
 function InputText(){
-	this.make = function(){
+	this.make = function(id, type){
 		const input = document.createElement('input')
-		input.setAttribute('type','text')
-		input.setAttribute('id','val')
+		input.setAttribute('id',id)
+		input.setAttribute('type',type)
 		return input
 	}
 }
 function InputButton(){
-	this.make = function(){
+	this.make = function(id, type, val){
 		const input = document.createElement('input')
-		input.setAttribute('type','button')
-		input.setAttribute('value','버튼')
-		input.setAttribute('id','btn')
+		input.setAttribute('id',id)
+		input.setAttribute('type',type)
+		input.setAttribute('value',val)
 		return input
 	}
 }	
@@ -27,5 +37,6 @@ function Factory(type){
 		case 'inputText' : return new InputText()
 		case 'inputButton' : return new InputButton()
 		case 'br' : return new Br()
+		case 'div' : return new Div()
 	}
 }
